@@ -1,0 +1,10 @@
+cat /proc/cpuinfo                  # CPU model
+cat /proc/meminfo                  # Hardware memory
+grep MemTotal /proc/meminfo        # Display the physical memory
+watch -n1 'cat /proc/interrupts'   # Watch changeable interrupts continuously
+free -m                            # Used and free memory (-m for MB)
+cat /proc/devices                  # Configured devices
+lspci -tv                          # Show PCI devices
+lsusb -tv                          # Show USB devices
+lshal                              # Show a list of all devices with their properties
+dmidecode                          # Show DMI/SMBIOS: hw info from the BIOS
